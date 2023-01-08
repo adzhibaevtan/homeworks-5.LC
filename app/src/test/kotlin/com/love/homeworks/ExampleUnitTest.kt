@@ -1,4 +1,4 @@
-package com.love.homework_52
+package com.love.homeworks
 
 import org.junit.Test
 

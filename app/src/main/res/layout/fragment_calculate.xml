@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.calculate.CalculateFragment">
+
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Check love compatibility"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/bg_et1"
+        android:hint="First name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName|textCapSentences"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_pink"
+        app:layout_constraintTop_toBottomOf="@id/desc">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_second_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_et2"
+        android:hint="Second name"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName|textCapSentences"
+        android:padding="20dp"
+        android:singleLine="true"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintTop_toBottomOf="@id/et_first_name">
+
+    </EditText>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/dark_gradient"
+        android:foreground="@drawable/ripple"
+        android:text="Check"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_second_name" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculateBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
