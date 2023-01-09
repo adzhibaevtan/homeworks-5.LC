@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/purple"
+    android:paddingTop="24dp"
+    android:layout_marginStart="24dp"
+    android:paddingBottom="24dp">
+
+
+    <TextView
+        android:id="@+id/fnHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textSize="18dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="+"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/snHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:text="Second Name"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp"
+        android:text="="
+        android:textColor="@color/white" />
+
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/perHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="100"
+        android:layout_marginEnd="58dp"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

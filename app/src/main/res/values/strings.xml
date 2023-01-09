@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">HW-5.2</string>
-   <string name="question">\?</string>
+    <string name="question">\?</string>
     <string name="place_holder">Place holder</string>
     <string name="plus">+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

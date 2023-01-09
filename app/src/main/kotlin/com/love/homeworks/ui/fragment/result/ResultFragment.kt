@@ -7,9 +7,10 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.love.homeworks.R
 import com.love.homeworks.databinding.FragmentResultBinding
 import com.love.homeworks.model.LoveModel
-import com.love.homeworks.preferences.Constants.KEY
+import com.love.homeworks.preference.Constants.KEY
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ResultFragment : Fragment(R.layout.fragment_result) {
     private val binding by viewBinding(FragmentResultBinding::bind)
 
