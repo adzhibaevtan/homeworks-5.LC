@@ -81,5 +81,11 @@ dependencies {
     // hilt
     implementation 'com.google.dagger:hilt-android:2.44.2'
     kapt 'com.google.dagger:hilt-compiler:2.44.2'
+
+    //lottie
+    implementation 'com.airbnb.android:lottie:3.6.1'
+
+    // viewPager indicator
+    implementation "com.tbuonomo:dotsindicator:4.3"
 }
 

@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.room.Room
 import com.love.homeworks.data.local.room.AppDataBase
 import com.love.homeworks.data.local.room.Dao
+import com.love.homeworks.data.local.sharedPref.PreferencesManager
 import com.love.homeworks.remote.api.LoveApi
 import dagger.Module
 import dagger.Provides

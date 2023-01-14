@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.love.homeworks.data.local.room.Dao
+import com.love.homeworks.data.local.sharedPref.PreferencesManager
 import com.love.homeworks.model.LoveModel
 import com.love.homeworks.remote.api.LoveApi
 import retrofit2.Call
@@ -11,9 +12,9 @@ import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
 
-class Repository @Inject constructor(private val api: LoveApi,private val dao: Dao) {
+class Repository @Inject constructor(private val api: LoveApi,private val dao: Dao,private var pref :PreferencesManager) {
 
-    
+
     fun getLiveLove(firstName: String, secondName: String): MutableLiveData<LoveModel> {
         val liveData = MutableLiveData<LoveModel> ()
         api.getResultLove(firstName,secondName).enqueue(object :Callback<LoveModel>{
@@ -30,6 +31,12 @@ class Repository @Inject constructor(private val api: LoveApi,private val dao: D
         })
         return liveData
     }
+
+    fun onBoardingShow():Boolean {
+        val liveData = MutableLiveData<Boolean>()
+        return pref.hasUserSeenOnBoarding
+    }
+
 
     fun getAlLove(): LiveData<List<LoveModel>> {
         return dao.getAlLove()
