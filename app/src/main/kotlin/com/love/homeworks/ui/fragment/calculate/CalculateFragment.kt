@@ -41,9 +41,6 @@ class CalculateFragment : Fragment(R.layout.fragment_calculate) {
                     findNavController().navigate(R.id.resultFragment, bundleOf(KEY to it))
                 }
             }
-            history.setOnClickListener {
-                findNavController().navigate(CalculateFragmentDirections.actionCalculateFragmentToHistoryFragment())
-            }
         }
 
     }

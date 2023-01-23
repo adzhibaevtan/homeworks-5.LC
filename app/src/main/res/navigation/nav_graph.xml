@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_calculateFragment_to_resultFragment"
             app:destination="@id/resultFragment" />
-        <action
-            android:id="@+id/action_calculateFragment_to_historyFragment"
-            app:destination="@id/historyFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -26,26 +23,5 @@
             android:id="@+id/action_resultFragment_to_calculateFragment"
             app:destination="@id/calculateFragment"
             />
-    </fragment>
-    <fragment
-        android:id="@+id/historyFragment"
-        android:name="com.love.homeworks.ui.fragment.history.HistoryFragment"
-        android:label="fragment_history"
-        tools:layout="@layout/fragment_history" >
-        <action
-            android:id="@+id/action_historyFragment_to_calculateFragment2"
-            app:destination="@id/calculateFragment" />
-        <action
-            android:id="@+id/action_historyFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/onBoardingFragment"
-        android:name="com.love.homeworks.ui.fragment.onBoarding.OnBoardingFragment"
-        android:label="fragment_on_boarding"
-        tools:layout="@layout/fragment_on_boarding" >
-        <action
-            android:id="@+id/action_onBoardingFragment_to_calculateFragment"
-            app:destination="@id/calculateFragment" />
     </fragment>
 </navigation>

@@ -45,14 +45,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/plus" />
 
-    <ImageView
-        android:id="@+id/loveImage"
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         app:layout_constraintBottom_toTopOf="@id/resultTv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/secondNameTv"/>
+        app:layout_constraintTop_toBottomOf="@id/secondNameTv"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="heart_lottie.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
 
     <TextView
         android:id="@+id/percentageTv"
